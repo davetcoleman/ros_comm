@@ -150,7 +150,7 @@ class ROSLaunchParent(object):
         if self.is_core:
             print("ros_comm version %s" % (self.config.params['/rosversion'].value))
             
-        print(self.config.summary(local=self.remote_runner is None))
+        #print(self.config.summary(local=self.remote_runner is None))
         if self.config:
             for err in self.config.config_errors:
                 printerrlog("WARNING: %s"%err)
